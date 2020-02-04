@@ -12,3 +12,5 @@ SELECT employer.name FROM techjobs.employer WHERE employer.location IN("St.Louis
 DROP TABLE techjobs.job
 
 ## Part 4: Test it with SQL
+
+SELECT skill.name, skill.description FROM skill INNER JOIN job_skills ON skills_id=skill.id
