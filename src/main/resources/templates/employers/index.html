@@ -9,7 +9,7 @@
 <p th:unless="${employers} and ${employers.size()}">no jobs!</p>
 
 <div class="container body-content">
-    <h2>Employers</h2>
+    <h2 th:text="${title}">Employers</h2>
     <ul>
         <li th:each="employer : ${employers}">
             <a th:href="@{'/employers/view/' + ${employer.id}}" th:text="${employer.name}"></a>
